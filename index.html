@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+#panel,#panel, #panel1, #panel2, #panel3, #panel4 , .flip {
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(100, 102, 102);
+  color: rgb(0, 0, 0);
+  border: solid 1px #000000;
+  margin: auto;
+}
+
+#panel, #panel1, #panel2, #panel3, #panel4 {
+  display: none;
+}
+body { background-color:black; }
+        #snow{
+            background: none;
+            font-family: 'Oswald', sans-serif;
+            background-image: url('me.png'), url('meme.png'), url('mememe.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index:1;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            -webkit-animation: snow 1000s linear infinite;
+            -moz-animation: snow 1000s linear infinite;
+            -ms-animation: snow 1000s linear infinite;
+            animation: snow 1000s linear infinite;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+        @keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-moz-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-webkit-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-ms-keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+</style>
+</head>
+<body>
+<div id="snow">
+<p class="flip" onclick="myFunction()">Start Clicking if you're bored.</p>
+<div id="panel" onclick="myFunction1()">It seems you're really bored.😬</div>
+    <div id="panel1" onclick="myFunction2()">Well, what to do same here.🤷🏾‍♂️</div>
+    <div id="panel2" onclick="myFunction3()">I've one thing for you to try. 👇🏾</div>
+    <div id="panel3" onclick="myFunction4()"><img src="suffer.jpeg" alt="Suffer"></div>
+    <div id="panel4"><a href="https://www.instagram.com/the.visha.l.ame target="_blank"">President for that</a></div>
+    
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+function myFunction1() {
+  document.getElementById("panel1").style.display = "block";
+}
+function myFunction2() {
+  document.getElementById("panel2").style.display = "block";
+}
+function myFunction3() {
+  document.getElementById("panel3").style.display = "block";
+}
+function myFunction4() {
+  document.getElementById("panel4").style.display = "block";
+}
+</script>
+
+</body>
+</html>
