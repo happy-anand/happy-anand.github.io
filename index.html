@@ -17,7 +17,7 @@
   display: none;
 }
 body { background-color:black; }
-        #snow{
+#snow{
             background: none;
             font-family: 'Oswald', sans-serif;
             background-image: url('me.png'), url('meme.png'), url('mememe.png');
@@ -54,8 +54,15 @@ body { background-color:black; }
         }
         @-ms-keyframes snow {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
+          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}}
+         #left,#right{
+            width:50%; 
+            background: rgb(100, 102, 102);}       
+
+        #left {   
+            float:left; }
+        #right {   float:right; }          
+
 </style>
 </head>
 <body>
@@ -65,8 +72,8 @@ body { background-color:black; }
     <div id="panel1" onclick="myFunction2()">Well, what to do same here.🤷🏾‍♂️</div>
     <div id="panel2" onclick="myFunction3()">I've one thing for you to try. 👇🏾</div>
     <div id="panel3" onclick="myFunction4()"><figure><img src="suffer.jpeg" alt="Suffer"><figcaption align="center">Click here to Join</figcaption></figure></div>
-    <div id="panel4"><a href="https://www.instagram.com/the.happy.anand" target="_blank">President for that</a></div>
-    <div id="panel4"><a href="Twitter Trial.html" target="_blank">Twitter Work</a></div>
+    <div id="panel4"><div id="left"><a href="https://www.instagram.com/the.happy.anand" target="_blank">President for that</a></div>
+    <div id="right"><a href="https://www.youtube.com/playlist?list=PLz68DjLL7pNaCzLGp_t5pzD_YjrUc-Hys" target="_blank">Weird Shit</a></div></div>
     
 </div>
 
